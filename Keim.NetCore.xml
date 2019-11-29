@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Keim.NetCore</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AuthenticationExtend.ConfigureIdentityServer(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.IdentityClinetDTO)">
+            <summary>
+            配置认证服务
+            </summary>
+            <param name="services"></param>
+            <param name="clinetDTO"></param>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.UseSwaggerExtend.EnabledSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            启用Swagger
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.UseSwaggerExtend.EnabledSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            使用swagger
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.RegisterConsulExtend.RegisterConsul(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IApplicationLifetime,Microsoft.AspNetCore.Builder.Model.ServiceEntity,System.String)">
+            <summary>
+            注册Consul
+            </summary>
+            <param name="app"></param>
+            <param name="lifetime"></param>
+            <param name="serviceEntity">服务注册信息</param>
+            <param name="HadlthPath">健康检查地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.RegisterConsulExtend.SingletonServiceEndPoint(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            获取服务信息
+            </summary>
+            <param name="service"></param>
+            <param name="Configuration"></param>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.RegisterConsulExtend.SingletonServiceEndPointCollection(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            服务注册并返回
+            </summary>
+            <param name="service"></param>
+            <param name="Configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RestSharp.HttpErrorException.Create(System.Exception,System.Int32)">
+            <summary>
+            从 <paramref name="error"/> 还原创建异常实例。
+            </summary>
+            <param name="error">HttpError 实例</param>
+            <param name="statusCode">HTTP 状态代码</param>
+            <returns></returns>
+        </member>
+        <member name="P:RestSharp.HttpErrorException.StatusCode">
+            <summary>
+            HTTP 状态代码
+            </summary>
+        </member>
+        <member name="P:RestSharp.HttpErrorException.ExceptionType">
+            <summary>
+            来源异常实际类型
+            </summary>
+        </member>
+        <member name="P:RestSharp.HttpErrorException.StackTrace">
+            <summary>
+            来源异常堆栈跟踪
+            </summary>
+        </member>
+        <member name="M:RestSharp.RestSharpExtend.ExecuteAsyncWithErrorThrow``1(RestSharp.RestClient,RestSharp.IRestRequest)">
+            <summary>
+            执行请求并返回结果信息
+            </summary>
+            <typeparam name="TModel"></typeparam>
+            <param name="client"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ObjectExtensions.ObjectConvertTo``1(System.Object)">
+            <summary>
+            对象转换
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ObjectExtensions.GetObjectAttribute``1(System.Object)">
+            <summary>
+            获得特性
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ObjectExtensions.CheckNull(System.Object,System.String)">
+            <summary>
+            检测对象是否为null,为null则抛出<see cref="T:System.ArgumentNullException"/>异常
+            </summary>
+            <param name="obj">对象</param>
+            <param name="parameterName">参数名</param>
+        </member>
+        <member name="M:System.ObjectExtensions.IsNull(System.Object)">
+            <summary>
+            检测对象是否为null,为null则抛出<see cref="T:System.ArgumentNullException"/>异常
+            </summary>
+            <param name="obj">对象</param>
+            <param name="parameterName">参数名</param>
+        </member>
+        <member name="M:System.ObjectExtensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            是否为空
+            </summary>
+            <param name="value">值</param>
+        </member>
+        <member name="M:System.StringExtensions.IsMatch(System.String,System.String)">
+            <summary>
+            指示所指定的正则表达式在指定的输入字符串中是否找到了匹配项
+            </summary>
+            <param name="value">要搜索匹配项的字符串</param>
+            <param name="pattern">要匹配的正则表达式模式</param>
+            <returns>如果正则表达式找到匹配项，则为 true；否则，为 false</returns>
+        </member>
+        <member name="M:System.StringExtensions.IsIPAddress(System.String)">
+            <summary>
+            验证是否IP地址
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringExtensions.Match(System.String,System.String)">
+            <summary>
+            在指定的输入字符串中搜索指定的正则表达式的第一个匹配项
+            </summary>
+            <param name="value">要搜索匹配项的字符串</param>
+            <param name="pattern">要匹配的正则表达式模式</param>
+            <returns>一个对象，包含有关匹配项的信息</returns>
+        </member>
+        <member name="M:System.StringExtensions.Matches(System.String,System.String)">
+            <summary>
+            在指定的输入字符串中搜索指定的正则表达式的所有匹配项的字符串集合
+            </summary>
+            <param name="value"> 要搜索匹配项的字符串 </param>
+            <param name="pattern"> 要匹配的正则表达式模式 </param>
+            <returns> 一个集合，包含有关匹配项的字符串值 </returns>
+        </member>
+        <member name="M:System.StringExtensions.IsEmail(System.String)">
+            <summary>
+            是否电子邮件
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.IsIpAddress(System.String)">
+            <summary>
+            是否是IP地址
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.IsNumeric(System.String)">
+            <summary>
+            是否是整数
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.IsUnicode(System.String)">
+            <summary>
+            是否是Unicode字符串
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.IsUrl(System.String)">
+            <summary>
+            是否Url字符串
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.IsIdentityCard(System.String)">
+            <summary>
+            是否身份证号，验证如下3种情况：
+            1.身份证号码为15位数字；
+            2.身份证号码为18位数字；
+            3.身份证号码为17位数字+1个字母
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.IsMobileNumber(System.String,System.Boolean)">
+            <summary>
+            是否手机号码
+            </summary>
+            <param name="value"></param>
+            <param name="isRestrict">是否按严格格式验证</param>
+        </member>
+        <member name="M:System.StringExtensions.IsEmpty(System.String)">
+            <summary>
+            检查指定的字符串是否为 null 或 string.Empty。
+            <para>简化 string.IsNullOrEmpty(string) 方法调用。</para>
+            <para>调用前无需检查字符串实例是否为 null。</para>
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.IsTrimmedEmpty(System.String)">
+            <summary>
+            检查指定的字符串在移除前后空白字符后，是否为 null 或 string.Empty。
+            <para>简化 (string).Trim() + string.IsNullOrEmpty(string) 方法调用。</para>
+            <para>调用前无需检查字符串实例是否为 null。</para>
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.IsTrimmedEmpty(System.String,System.Char[])">
+            <summary>
+            检查指定的字符串在移除前后空白字符后，是否为 null 或 string.Empty。
+            <para>简化 (string).Trim(params char[]) + string.IsNullOrEmpty(string) 方法调用。</para>
+            <para>调用前无需检查字符串实例是否为 null。</para>
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.Format(System.String,System.Object[])">
+            <summary>
+            简化 string.Format(string text, params object[] args) 方法调用。
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.IsLengthInRange(System.String,System.Int32,System.Int32)">
+            <summary>
+            验证字符串 <paramref name="text"/> 长度是否在指定范围 (<paramref name="min"/>, <paramref name="max"/>) 内，左右边界均为不包含。
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.isNumeric(System.String)">
+            <summary>
+            验证字符串 <paramref name="text"/> 是否可成功转换为数值类型（Int64/UInt64/double/decimal 任意一种）。
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.equalsIgnoreCase(System.String,System.String)">
+            <summary>
+            简化 string.Equals(string, string, StringComparison) 方法调用。
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.containsIgnoreCase(System.String,System.String)">
+            <summary>
+            （不区分大小写）判断是否包含子串。
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.startsWithIgnoreCase(System.String,System.String)">
+            <summary>
+            （不区分大小写）判断字符串 <paramref name="text"/> 的开头是否与指定字符串 <paramref name="otherText"/> 匹配。
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.endsWithIgnoreCase(System.String,System.String)">
+            <summary>
+            （不区分大小写）判断字符串 <paramref name="text"/> 的结尾是否与指定字符串 <paramref name="otherText"/> 匹配。
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.splitRemoveEmpty(System.String,System.Char)">
+            <summary>
+            简化 string.Split(new[] { separator }, StringSplitOptions.RemoveEmptyEntries) 方法调用。
+            <author>sol</author>
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.GetPinyin(System.String)">
+            <summary>
+            返回拼音
+            </summary>
+            <param name="Str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringMD5Extend.Encrypt(System.String)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringMD5Extend.Encrypt32MD5(System.String)">
+            <summary>
+            MD5加密,返回小写
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringMD5Extend.HMACMD5(System.String,System.String)">
+            <summary>
+            HMACMD5签名算法
+            MD5--Hash加密算法（本质上说不是加密算法，因为无法解密，准确来说是一种签名算法）
+            </summary>
+            <param name="str">数据</param>
+            <param name="key">key</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringMD5Extend.HMACSHA1(System.String,System.Byte[])">
+            <summary>
+            HMACSHA1签名算法
+            </summary>
+            <param name="str"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringMD5Extend.RandNumberHelper(System.Boolean,System.Int32)">
+            <summary>
+            创建随机号
+            </summary>
+            <param name="numberFlag"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Keim.NetCore.Model.ServiceEndPoint.ServiceName">
+            <summary>
+            服务标题
+            </summary>
+        </member>
+        <member name="P:Keim.NetCore.Model.ServiceEndPoint.EndPoint">
+            <summary>
+            终节点地址
+            </summary>
+        </member>
+        <member name="P:Keim.NetCore.Model.ServiceEndPoint.Port">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="T:Keim.NetCore.MvvM.AbstractDelegateCommand">
+            <summary>
+            事件处理机制
+            </summary>
+        </member>
+        <member name="T:Keim.NetCore.MvvM.AbstractNotificationObject">
+            <summary>
+            
+            
+            </summary>
+        </member>
+    </members>
+</doc>

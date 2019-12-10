@@ -3,8 +3,9 @@
 **支持框架 NetCore2.0以上  GRPC客户端 Consul扩展类 IdentityServer4扩展**
 
 ### Keim NetCore 1.0.10
->作者：赵枫
+>作者：路人甲
 >邮箱地址：zhaofeng_qjj@163.com
+>安装示例：Install-Package Keim.NetCore -Version 1.0.10
 
 KeimNetCore是一种平时工作中常用业务方法及NetCore扩展方法，同时支持NetCore2.0及以上版本。
 

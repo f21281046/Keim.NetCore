@@ -29,24 +29,30 @@ RestSharp  | 106.6.9  | HTTP/1.x请求
 
 **Extend**
 >框架及业务扩展
->AuthenticationExtend 【IdentityServer4服务配置扩展方法】
->BuildServiceExtend		【NetCore依赖注入方法，需要抽象接口及父类】
->EnabledCorsExtend		【NetCore启用跨域请求方法】
->GrpcClientExtend		【Grpc客户端通道创建】
->LoggingExtend			【NetCore日志扩展集合】
->RegisterConsulExtend	【Consul服务注册扩展方法 可注入、可生成MicroServiceManager集合】
->RestSharpExtend		【Http1.x 请求扩展方法】
->SerializerSettingExtend	【框架序列化扩展方法，小驼峰】
->UseSwaggerExtend		【Swagger框架启用扩展方法 注意：NetCore3.0有所不同】
+
+名称  | 功能
+------------- | -------------
+AuthenticationExtend |  IdentityServer4服务配置扩展方法
+BuildServiceExtend	  | NetCore依赖注入方法，需要抽象接口及父类
+EnabledCorsExtend		| NetCore启用跨域请求方法
+GrpcClientExtend		| Grpc客户端通道创建
+LoggingExtend			| NetCore日志扩展集合
+RegisterConsulExtend	| Consul服务注册扩展方法 可注入、可生成MicroServiceManager集合
+RestSharpExtend		| Http1.x 请求扩展方法
+SerializerSettingExtend	| 框架序列化扩展方法，小驼峰
+UseSwaggerExtend		| Swagger框架启用扩展方法 注意：NetCore3.0有所不同
 
 
 **Helper**
 >常用验证及加密方法
->EncryHelper			【MD5/ABS/DES加密】
->ObjectRegex			【对象验证数据类型功能 正则表达示】
->TypeHelper				【类型转换方法】
->EnumHelper				【枚举获取DescriptionAttribute特性方法】
->StringHelper			【字符串验证方法 汉字转拼音】
+
+名称  | 功能
+------------- | -------------
+EncryHelper		|	【MD5/ABS/DES加密】
+ObjectRegex		|	【对象验证数据类型功能 正则表达示】
+TypeHelper		|		【类型转换方法】
+EnumHelper		|		【枚举获取DescriptionAttribute特性方法】
+StringHelper	|		【字符串验证方法 汉字转拼音】
 
 
 **Model**

@@ -7,9 +7,10 @@
 >邮箱地址：zhaofeng_qjj@163.com
 
 KeimNetCore是一种平时工作中常用业务方法及NetCore扩展方法，同时支持NetCore2.0及以上版本。
+
 ### 已包含的NuGet内容
 包名称  | 版本  |  功能
-------------- | -------------
+------------- | -------------|-------------
 Consul  | 0.7.2.6 |  服务注册
 Google.Protobuf  | 3.7.0  | 序列化
 Grpc  | 2.25.0  | Grpc目前只支持GRPC客户端 服务端需要NetCore3.0服务实现
@@ -18,6 +19,7 @@ IdentityServer4.AccessTokenValidation  | 2.6.0  | OAuth2.0认证支持
 NLog.Extensions.Logging  | 1.6.1  | 日志输出
 PinYinConverterCore  | 1.0.2  | 汉字转拼音支持
 RestSharp  | 106.6.9  | HTTP/1.x请求
+
 
 ### 常用库结构分类
 **DTO**
@@ -55,6 +57,6 @@ RestSharp  | 106.6.9  | HTTP/1.x请求
 **Tools**
 >RequestHeaderFilter	【请求日志Filter】
 
-###Keim.NetCore 1.0.11版本计划
+### Keim.NetCore 1.0.11版本计划
 >添加通用缓存支持库 【Redis MDB】
 >添加RMQ消息通道
